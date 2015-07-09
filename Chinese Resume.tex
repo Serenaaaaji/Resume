@@ -1,0 +1,93 @@
+%# -*- coding:utf-8 -*-
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper]{moderncv}
+
+\usepackage{fontspec,xunicode}
+\setmainfont{Tahoma}
+\usepackage{xkeyval}
+\usepackage[slantfont,boldfont]{xeCJK}
+\usepackage{xcolor}                 % replace by the encoding you are using
+%\setCJKmainfont{Adobe Song Std L}  % 如果有安装Adobe Song 字体，就用这个吧
+\setCJKmainfont{SimSun}             % 没有安装Adobe Song 字体的就换回SimSun字体吧
+\setCJKfamilyfont{song}{SimSun}
+
+% moderncv themes
+%\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Rui}
+\familyname{Tian}
+\title{田睿}               % optional, remove the line if not wanted
+%\address{杭州}{中国}    % optional, remove the line if not wanted
+\mobile{+1-215-350-8340}                    % optional, remove the line if not wanted
+\phone{+86-15195808380}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{rui.tian.gr@dartmouth.edu}                     % optional, remove the line if not wanted
+%\extrainfo{www.chinatex.org} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{China\TeX 您的LaTeX乐园，TeX\&\LaTeX 王国}                 % optional, remove the line if not wante
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{教育经历}
+\cvline{达特茅斯学院}{计算机科学专业硕士}
+\cvline{}{2014.8 - 2016.6}
+\cvline{达特茅斯学院}{电力电子专业硕士}
+\cvline{}{2012.8 - 2014.6}
+\cvline{}{毕业论文: 高频直流-直流转换器中磁性元件设计与优化}
+\cvline{南京大学}{材料物理专业学士}
+\cvline{}{2008.9 - 2012.6}
+\subsection{}
+\section{专业技能}
+\cvline{精通}{Java, C, Python, C++, Android Programming and MATLAB; LaTeX, Git and SVN;}
+\cvline{熟悉}{Linux Programming, SQL, CSS, JavaScript and HTML; Clojure;}
+\cvline{GitHub}{\url{https://github.com/complete46}}
+\subsection{}
+\section{专业经历}
+\cventry{2015.6 – 2015.9, Amazon Web Service, 西雅图}{软件工程师实习}{\textbf{Amazon EBS}}{参于设计基于Paxos算法的分布式系统以期达到更高的可用性和稳定性：使用Clojure语言和Jepson工具设计并实现对该系统的测试工具}{}{}
+\cventry{2015.3 – 2015.5, 达特茅斯学院}{C程序开发}{\textbf{DartSync:网络课程设计}}{设计了一个基于P2P的Linux 文件同步系统，参于实现了服务器端和客户端，独立完成了一个文件夹监视系统。除基础的添加，删除，更改的同步，实现了文件重命名同步，用户私有文件设置，子文件夹扫描。实现了断点续传和部分文件上传功能} {}{}
+\cventry{2015.1 – 2015.3, 达特茅斯学院}{Android开发}{\textbf{MyRuns:日常锻炼记录}}{设计并部署了一个记录用户日常锻炼的Android 应用。实现了利用定位系统来识别运动类型（跑步，走路，爬山等），应用了Google App Engine和Google Cloud Meesage} {}{}
+\cventry{2015.1 – 2015.3, 达特茅斯学院}{Android开发}{\textbf{Dartmining:校园活动挖掘}}{设计并部署了一个从校园网站，邮件列表等资源中挖掘日常活动的Android 应用。实现了利用决策树为活动分类和用户与用户，用户与云端之间的通信} {}{}
+\cventry{2012.9 - 2012.11, 达特茅斯学院}{机器学习项目}{\textbf{Breast cancer computer-aided diagnosis}}{根据乳腺钼靶摄影辅助癌症诊断，与校医院合作获得了约600幅胸腺图像，设计实现了随机森林算法，采用平行计算技术极大提升了计算效率（原本预计需120小时完成一次的计算，实际仅耗时约2小时）}{}{}
+\subsection{}
+\section{获得奖励}
+\cventry{2012.8 – 2014.6，达特茅斯学院}{全额奖学金}{达特茅斯学院的工程学院为硕士研究生提供的全额奖学金（每年约2-3 位得主）}{}{}{}
+\cventry{2009.9，2010.9，南京大学}{优秀学生奖学金}{南京大学为成绩优秀的本科学生提供的奖学金}{}{}{}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+%% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+%\begin{thebibliography}{99}
+%\bibitem{11} LaTeX入门与提高，高等教育出版社。
+%\end{thebibliography}
+\end{document}
+
+
+%% end of file `template_en.tex'.

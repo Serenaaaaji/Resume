@@ -1,0 +1,244 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.55in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{ulem}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{url}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Rui Tian}}
+
+6211 Sudikoff, Hanover, NH 03755\ \ \textbullet
+\ \ +1(215)-350-8340\ \ \textbullet
+\ \ +86-15195808380\ \ \textbullet
+\ \ rui.tian.gr@dartmouth.edu\ \
+\end{center}
+
+\hrule
+%\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+    \item
+	\headerrow
+		{\textbf{Master of Science in Computer Science (67\% Tuition waiver)}}
+		{Aug. 2014 -- June 2016 (Expected)}
+	\\
+	\headerrow
+        {Dartmouth College, Hanover, NH}
+		
+
+	\item
+	\headerrow
+		{\textbf{Master of Science in Electrical Engineering (Full funded by scholarship)}}
+		{Aug. 2012 -- June 2014}
+	\\
+	\headerrow
+		{Dartmouth College, Hanover, NH}
+        {}
+    \\
+    \headerrow
+        {Thesis: \textit{Micro-Fabrication and Circuit Optimization for Magnetic Components of High-Efficiency DC-DC Converters}}
+		
+
+	\item
+	\headerrow
+		{\textbf{Bachelor of Science in Material Physics}}
+		{Sep. 2008 -- June 2012}
+	\\
+	\headerrow
+		{Nanjing University, Nanjing, China}
+
+\end{itemize}
+
+
+%\hrule
+%\vspace{-0.4em}
+%\subsection*{Market Experience}
+%
+%\begin{itemize}
+%	\parskip=0.1em
+%
+%	\item
+%	\headerrow
+%		{\textbf{Dartmouth Mini Hedge Fund}}
+%		{\textbf{Hanover, NH}}
+%	\\
+%	\headerrow
+%		{\emph{Chief Risk Officer}}
+%		{\emph{Jan. 2013 -- present}}
+%	\begin{itemize*}
+%		\item Co-found a student-run fund focusing on trading foreign exchange.
+%		\item Develop a scalable platform to back-test and real-time simulate trading strategies under C\#.
+%        \item Develop and test quantitative trading strategies for both trending and ranging markets. Combined strategies reach 30.5\% annual return with 35.5\% max drawdown since data from 2008.
+%        \item Paper-trade self-developed strategies on G10 currency markets. Gain 6.37\% return in three months.
+%	\end{itemize*}
+%
+%\end{itemize}
+\hrule
+\vspace{-0.4em}
+\subsection*{Skills}
+
+
+\begin{itemize}
+    \parskip=0.01em
+     \item Proficient: Java, C, Python, C++, Android Programming and MATLAB; LaTeX, Git and SVN;
+     \item Familiar: Linux Programming, SQL, CSS, JavaScript and HTML; Clojure;
+     \item GitHub: \url{https://github.com/complete46}
+\end{itemize}
+
+
+\hrule
+%\vspace{-0.4em}
+
+\subsection*{Professional Experience}
+
+\begin{itemize}
+	%\parskip=0.1em
+
+    \item
+    \headerrow
+		{\textbf{Software Developer Engineer Intern}}
+		{\textbf{June. 2015 -- Sept. 2015 (Expected)}}
+	\\
+    \headerrow
+		{Elastic Block Storage Team, Amazon Web Service}
+		{Seattle, WA}
+	\begin{itemize*}
+        \item Participating in implementing a new generation of distributed system that provides extreme high overall on availability, consistency and performance. 
+        \item Designing and developing test tools with Clojure and Jepson to verify implementation.
+	\end{itemize*}
+
+    \item
+    \headerrow
+		{\textbf{C Developer: DarySync}}
+		{\textbf{Mar. 2015 -- May 2015}}
+	\\
+    \headerrow
+		{Network Course Project, Computer Science Department, Dartmouth College}
+		{Hanover, NH}
+	\begin{itemize*}
+        \item DartSync is a peer to peer based file synchronization system oriented towards Linux machines based on P2P protocol. It supports breakpoint resuming and partial downloading.
+        \item Participated in implementing Tracker (cloud side) and Peer (user side). Independently implemented a directory monitor that supports file rename, subdirectory monitoring, user specified private files, plus common feature including adding, changing and deleting files in the monitoring folders.
+	\end{itemize*}
+
+    \item
+    \headerrow
+		{\textbf{Android Developer: MyRuns and DartmouthMining}}
+		{\textbf{Jan. 2015 -- Mar. 2015}}
+	\\
+    \headerrow
+		{Smartphone Programming Course, Computer Science Department, Dartmouth College}
+		{Hanover, NH}
+	\begin{itemize*}
+        \item MyRuns: Developed and deployed an Android app to track and analyze the work out records of users by applying location tracking, activity recognition, Google App Engine and Google Cloud Message.
+        \item DartmouthMining: Developed and deployed another Android app to mine the events around Dartmouth campus; Implemented a decision tree to classified acquired events and communication between users and cloud.
+	\end{itemize*}
+
+    \item
+    \headerrow
+		{\textbf{Project Leader: Breast Cancer Predication from Mammographic Findings}}
+		{\textbf{Sept. 2014 -- Nov. 2014}}
+	\\
+    \headerrow
+		{Machine Learning Course, Computer Science Department, Dartmouth College}
+		{Hanover, NH}
+	\begin{itemize*}
+        \item Implemented a specified version of random forest algorithm for breast cancer prediction
+        \item Parallelized the computation and improved the computation efficiency by a factor of 90.
+
+	\end{itemize*}
+
+%	\item
+%	\headerrow
+%		{\textbf{Research Assistant: Agile Delivery of Electrical Power Technology}}
+%		{\textbf{Aug. 2012 -- June 2014}}
+%	\\
+%    \headerrow
+%	    {Thayer Engineering School, Dartmouth College associated with MIT, UPenn and GeorgiaTech}
+%		{Hanover, NH}
+%	\begin{itemize*}
+%        \item Worked on project "Agile Delivery of Electrical Power Technology" funded by U.S. Department of Energy (US-DOE, DE-FOA-0000288). Available at \url{https://arpa-e-foa.energy.gov}; Modeled and optimized circuit performances with both analytical and numerical analysis; implemented particular version of comprehensive learning particle swarm optimization
+%
+%	\end{itemize*}
+\end{itemize}
+
+
+\hrule
+%\vspace{-0.4em}
+
+
+\subsection*{Awards}
+
+\begin{itemize}
+	\parskip=0.1em
+    \item
+    \headerrow
+    {Full Graduate Research Fellowship for Master Student at Dartmouth College (2 - 3 winners per year)}
+    {2012 - 2014}
+
+    \item
+    \headerrow
+    {Outstanding Undergraduate Scholarship at Nanjing University}
+    {2009 \& 2010}
+
+\end{itemize}
+
+\hrule
+%\vspace{-0.4em}
+
+%\subsection*{Academic Publications}
+%  \begin{itemize}
+%    \parskip=0.1em
+%    \item Harburg, Daniel V., Alex J. Hanson, Yue Song, Jizheng Qiu, \uline{Rui Tian}, Christopher G. Levey, Charles R.  Sullivan, and David Otten. "Measured performance and micro-fabrication of racetrack power inductors." In Energy Conversion Congress and Exposition (ECCE), 2013 IEEE, pp. 614-620. IEEE, 2013
+%
+%
+%    \item Di Yao, Christopher G. Levey, \uline{Rui Tian} and Charles R. Sullivan. "Microfabricated V-Groove power inductors using multilayer Co-Zr-O thin films for very-high-frequency DC-DC converters." In Power Electronics, IEEE Transactions, Vol. 28, Issue 9, pp. 4384-4394. IEEE, 2013
+%
+%  \end{itemize}
+
+
+
+
+\end{document}
